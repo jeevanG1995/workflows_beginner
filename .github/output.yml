@@ -1,0 +1,8 @@
+name: output on displatch
+on: workflow_dispatch
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: output github context
+      runs: echo "${{github}}"
